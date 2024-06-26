@@ -20,7 +20,7 @@ main().catch((err) => {
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-app.use(express.urlencoded({ extended: true })); // in order that our express should understand the id that we have extracted from the url we write this line
+app.use(express.urlencoded({ extended: true })); 
 app.use(methodoverride("_method"));
 app.engine("ejs", ejsmate);
 app.use(express.static(path.join(__dirname,"/public")))
@@ -54,16 +54,15 @@ app.post("/listings", async (req, res) => {
 
 //show route
 app.get("/listings/:id", async (req, res) => {
-  let { id } = req.params; //extrancting the id #refer line no. 22
+  let { id } = req.params; 
   const listing = await Listing.findById(id);
   res.render("listings/show.ejs", { listing });
 });
 
 //edit route
 app.get("/listings/:id/edit", async (req, res) => {
-  let { id } = req.params; //extracting the id
-  const listing = await Listing.findById(id); //finding the listing with the id
-  res.render("listings/edit.ejs", { listing }); //we are creating a new form edit.ejs in which all the details will be filled and the form will be same as the new form and all the details will be in listing and we are passing the listing to the edit.ejs file
+  let { id } = req.params; 
+  const listing = await Listing.findById(id); 
 });
 
 //update route
