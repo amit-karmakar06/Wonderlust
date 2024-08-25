@@ -6,3 +6,8 @@ Clone this repo.
 ```
 git clone <link>
 ```
+
+Install node modules
+```
+npm i or npm install
+``
