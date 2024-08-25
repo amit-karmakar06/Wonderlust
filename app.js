@@ -87,22 +87,4 @@ app.listen(8000, () => {
   console.log("server started");
 });
 
-// app.get("/testListing", async (req, res) => {
-// try {
-// let sampleListing = new Listing({
-// title: "My villa",
-// description: "This is the villa which I own",
-// image: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60", // Ensure this is a string
-// price: 234,
-// location: "bijni",
-// country: "India"
-// });
-//
-// await sampleListing.save();
-// console.log("listing is saved");
-// res.send("saved");
-// } catch (error) {
-// console.log(error);
-// res.status(500).send("Error saving listing");
-// }
-// });
+
