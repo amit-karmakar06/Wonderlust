@@ -12,7 +12,8 @@ Install node modules
 npm i or npm install
 ```
 
-Run this file in your
+Run this file in your computer
+
 ```
 node app.js
 ```
