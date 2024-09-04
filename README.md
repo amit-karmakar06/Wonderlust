@@ -12,7 +12,7 @@ Install node modules
 npm i or npm install
 ```
 
-Run this file
+Run this file in y
 ```
 node app.js
 ```
